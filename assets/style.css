@@ -1,0 +1,212 @@
+@keyframes fade-in{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+body{
+  background:rgb(23,23,23);
+  color:white;
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 8px white;
+}
+
+
+
+#pbar {
+    width: 80%;
+    height: 125px;
+    margin: 20px 10% 100px 10%;
+    border-radius: 25px;
+
+    animation: fade-in 1s;
+}
+
+#pbar::-webkit-progress-bar {
+    border-radius: 25px;
+}
+
+#pbar::-webkit-progress-value {
+    width: 100%;
+    background: linear-gradient(to bottom, grey, rgb(55,55,55));
+    border-radius: 25px;
+}
+
+#pbarinfo {
+    position: absolute;
+    left: calc(20px + 10%);
+    top: 35px;
+    font-size: 100px;
+    font-weight: bold;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+    animation: fade-in 1s;
+}
+
+#infobox{
+	position:fixed;
+	right:0px;
+	top:0px;
+
+	width:400px;
+	height:200px;
+
+	border-style:solid;
+	border-radius:20px;
+	border-width:3px;
+
+	font-size:36px;
+	background-color:rgba(127, 127, 255, 0.7);
+
+	z-index:10;
+
+  animation: fade-in 1s;
+}
+
+#speedupbtn, #level0btn{
+	width:150px;
+	height:150px;
+	font-size:24px;
+  border: 0px solid;
+  border-radius: 5px;
+
+  transition: 0.7s;
+
+  animation: fade-in 1s;
+}
+
+#speedupbtn:hover, #level0btn:hover{
+	border-radius: 30px;
+}
+
+#speedupbtn:active, #level0btn:active{
+	filter: brightness(1.7);
+}
+
+#checkbox_buymax{
+	left:1700px;
+	top:500px;
+
+	width:100px;
+	height:100px;
+}
+
+/* GLOW */
+
+.text-glow-white{
+  text-shadow: 0px 0px 5px white;
+}
+
+.box-glow-white{
+  box-shadow: 0px 0px 5px 0px white;
+}
+
+.box-glow-blue{
+  box-shadow: 0px 0px 10px 5px #7777ff;
+}
+
+.box-glow-pink{
+  box-shadow: 0px 0px 10px 5px #ff33ff;
+}
+
+
+.upgradebtn{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border: 0px solid;
+  border-radius: 10px;
+	font-size: 24px;
+
+  margin: 20px 20px 20px 20px;
+
+  box-shadow: 0px 0px 10px 10px white;
+
+  transition: 0.7s;
+}
+
+.upgradebtn:hover {
+    background-color: #ddffdd;
+    box-shadow: 0px 0px 10px 10px #ddffdd;
+
+    border-radius: 30px;
+}
+
+button:active {
+    filter: brightness(1.7);
+}
+
+button:disabled {
+    filter: brightness(0.5);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.upgradebtn.bought{
+  background-color: #33ff33;
+  box-shadow: 0px 0px 10px 10px #33ff33;
+}
+
+.pupgradebtn{
+	width:200px;
+	height:200px;
+	background-color:#000000;
+	border-width:2px;
+	border-color:#990099;
+	color:#990099;
+	border-radius:10px;
+	font-size:24px;
+
+  transition: 0.7s;
+}
+
+#btngetprestige{
+	left:50%;
+	top:1900px;
+	width:400px;
+	height:200px;
+
+	background-color:#000000;
+	border-width:2px;
+	border-color:#990099;
+	color:#990099;
+	border-radius:10px;
+	font-size:28px;
+}
+
+.big-text{
+  font-size: 42px;
+}
+
+.container{
+  margin-top:200px;
+  margin-bottom:200px;
+
+  transition: 2s;
+
+  animation: fade-in 2s;
+}
+
+.title{
+  font-size: 48px;
+  text-shadow: 0px 0px 5px white;
+}

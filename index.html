@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+<title>Progress Bar</title>
+
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+
+<progress max="1" value="0" id="pbar"></progress>
+<span id="pbarinfo">0</span> <!--pbar overlay-->
+<br/>
+
+<div style="position:fixed; left:0px; bottom:0px; z-index: 10">
+  <button class="box-glow-blue" style="background-color:#00ccff; width:100px; height:50px; border:none;" onclick="export_game();">Export Game</button> &emsp; <!-- button to speed up things-->
+  <button class="box-glow-pink" style="background-color:#ff33ff; width:100px; height:50px; border:none;" onclick="import_game();">Import Game</button> &emsp;&emsp; <!-- button to go to level 1-->
+  <button style="background-color:black; width:100px; height:50px; border:1px solid white; color:white" onclick="hard_reset_game();">Wipe Save</button>
+</div>
+
+<div class="container" id="container_basicstats" style="height:100px; margin-bottom: 20px; margin-top: 20px; display:none">
+  <div class="box-glow-white" style="animation: fade-in 1s;">
+  <span class="big-text">You are on Progress Level <span id="textlevel" class="text-glow-white">0</span> <br/>
+                          +<span id="textupgpointsget" class="text-glow-white">12</span><img src="assets/img/upgrade_point.png"/></span> <br/><br/>
+  <span class="big-text">You have <span id="textupgpoints" class="text-glow-white">1</span> Upgrade Points</span>
+  </div>
+</div> <br/>
+
+<div class="container" id="container_basicbuttons" style="height:150px; margin-bottom: 10px; margin-top: 75px; display:none;">
+  <button id="speedupbtn" class="box-glow-blue" style="background-color:#00ccff;">SPEED UP<br/>x<span id="activeclickpowerboost">1.00</span></button> &emsp; <!-- button to speed up things-->
+  <button id="level0btn" class="box-glow-pink" style="background-color:#ff33ff;">Level 0</button> <!-- button to go to level 1-->
+</div>
+
+<br/>
+
+<div id="container_upgrades" class="container" style="display:none">
+  <h1 class="title">Upgrades</h1>
+  <br/>
+  <input type="checkbox" id="checkbox_buymax"></input> <span style="font-size:120px;">Buy Max</span> <!-- buy max-->
+  <br/>
+
+  </div>
+
+  <div id="container_permupgrades" class="container" style="overflow-y:scroll; height:500px; display:none">
+  <h1 class="title">One Time Upgrades</h1>
+</div>
+
+<div id="container_prestige" class="container" style="overflow-y:scroll; height:300px; display:none">
+  <h1 class="title">Prestige</h1>
+
+  <button id="btngetprestige" class="get-prestige">Reset and get <span id="textgetprestigepoint_amount">999</span> Prestige Points</button> <br/><br/>
+  <span id="textprestigeamount" style="font-size:24px;left:50%;top:2100px;">You have 123T*** Prestige Points</span> <br/><br/>
+
+</div>
+
+<script src="assets/scripts/decimal.js"></script>
+
+<script src="assets/scripts/utils.js"></script>
+<script src="assets/scripts/resources.js"></script>
+<script src="assets/scripts/format.js"></script>
+<script src="assets/scripts/globals.js"></script>
+<script src="assets/scripts/classes.js"></script>
+<script src="assets/scripts/storagemanagement.js"></script>
+<script src="assets/scripts/game.js"></script>
+
+</script>
+
+</body>
+
+</html>
